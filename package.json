@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "autoprefixer": "^10.4.20",
     "nuxt": "^3.13.0",
+    "postcss": "^8.4.45",
+    "tailwind": "^4.0.0",
     "vue": "latest",
     "vue-router": "latest"
   },
