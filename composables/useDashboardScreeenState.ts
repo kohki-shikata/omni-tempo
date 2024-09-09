@@ -11,10 +11,6 @@ const state = reactive<DashboardScreenState>({
   active: 'project-preference'
 });
 
-// const changeTab = () => {
-  
-// }
-
 // グローバルな状態を返す関数
 export const useDashboardScreenState = () => {
   return {

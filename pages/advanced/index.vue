@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import AvanModal from '@/components/elements/AdvancedAvanModal.vue';
 import ChartGroup from '@/components/elements/ChartGroup.vue';
+import ProjectPreference from '~/components/advanced/ProjectPreference.vue';
 import { useDashboardScreenState } from '@/composables/useDashboardScreeenState';
 
 // グローバルステートの取得
@@ -43,18 +44,7 @@ const getDataAttribute = (event: Event) => {
         </div>
         <div class="advanced-screen-project-preferences w-full"
           v-if="state.active === 'project-preference' ? true : false">
-          <label class="form-control w-full">
-            <div class="label">
-              <span class="label-text">Project title</span>
-            </div>
-            <input type="text" placeholder="Type here" class="input input-bordered w-3/5" />
-          </label>
-          <label class="form-control">
-            <div class="label">
-              <span class="label-text">Description</span>
-            </div>
-            <textarea class="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
-          </label>
+          <ProjectPreference />
         </div>
         <div class="advanced-screen-other w-full" v-if="state.active === 'tasks' ? true : false">
           <p>tasks screen</p>
